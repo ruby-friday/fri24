@@ -5,6 +5,18 @@
 </head>
 <body>
 	<div class="row">
+		Participants
+	</div>
+	<div>
+
+		<% @participants.each do |p| %>
+		<div>
+			First Name:  <%=p.first_name %> <br />
+		</div>
+		
+		<% end %>
+	</div>
+	<div class="row">
 		<h2>Create Participant</h2>
 	</div>
 	<form action="/add" method="post">
