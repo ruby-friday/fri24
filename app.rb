@@ -1,5 +1,10 @@
 require 'sinatra'
 
 get '/' do
-  'Hello world!'
+  erb :index
+end
+
+post '/add' do
+  puts @params
+  redirect to('/')
 end

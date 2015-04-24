@@ -1,0 +1,42 @@
+<html>
+<head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.1/css/foundation.css">
+	<title>Participants</title>
+</head>
+<body>
+	<div class="row">
+		<h2>Create Participant</h2>
+	</div>
+	<form action="/add" method="post">
+		<div class="row">
+			<div class="large-5 columns">
+				<label>First Name
+					<input type="text" placeholder="First Name" name="first_name" />
+				</label>
+			</div>
+		</div>
+		<div class="row">
+			<div class="large-5 columns">
+				<label>Last Name
+					<input type="text" placeholder="Last Name" name="last_name" />
+				</label>
+			</div>
+		</div>
+		<div class="row">
+			<div class="large-5 columns">
+				<label>Gender
+					<select name="gender" id="">
+						<option value="Male">Male</option>
+						<option value="Female">Female</option>
+					</select>
+				</label>
+			</div>
+		</div>
+		<div class="row">
+			<div class="large-5 columns">
+				<input type="submit" value="Save" class="button">
+			</div>
+		</div>
+	</form>
+</body>
+</html>
